@@ -1,0 +1,26 @@
+.subscribe
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+width: 90%;
+height: 100vh;
+gap: 1rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+.subscribe > div
+{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #2BC0E4, #EAECC6);
+    box-shadow: 0px 0px 15px 5px gray;
+    border-radius: 20px;
+    font-family: "Great Vibes";
+    height:auto;
+    padding: 5px;
+}

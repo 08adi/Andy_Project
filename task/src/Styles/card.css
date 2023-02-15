@@ -1,0 +1,55 @@
+.card_main
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 2rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 800px;
+    height: max-content;
+    overflow: hidden;
+    margin-left: 10px ;
+    align-items: center;
+    
+}
+.g1
+{
+    /* width: 400px; */
+    padding: 10px;
+    border-right: 2px solid black;
+    height: 250px;
+    row-gap: 10px;
+    display: grid;
+}
+
+
+
+.id_logo
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.g2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.down
+{
+    margin-top: 10px;
+    /* float: right; */
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+    width: 800px;
+}
+.download
+{
+    cursor: pointer;
+}

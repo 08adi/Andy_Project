@@ -1,0 +1,115 @@
+.Entire {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    padding: 10px;
+    width: 800px;
+    height: 550px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-image: linear-gradient(to right, #2BC0E4, #EAECC6);
+    box-shadow: 0px 0px 15px 5px gray;
+    font-family: "Great Vibes";
+    font-size: 28px;
+    border-radius: 20px;
+
+}
+input{
+    width: 250px;
+    height: 30px;
+}
+.reg 
+{
+    text-align: center;
+    width: 800px;
+}
+
+h1 {
+    font-family: 'Signika'
+}
+
+button {
+    font-size: 25px;
+    font-family: 'Libre Baskerville', serif;
+    background-color: #1623d2;
+    color: #ffffff
+}
+
+.full {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-image: url(../World\ Map.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.inpp {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 800px;
+}
+
+::placeholder
+{
+    text-align: center;
+}
+
+.butt
+{
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+label{
+    margin-left: 80px;
+}
+.register{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.register>p{
+    font-family: "Great Vibes";
+    font-size: 20px;
+}
+
+.register> a{
+    border: 1px solid white;
+    text-decoration: none;
+    background-color: whitesmoke;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px grey;
+    height: 25px;
+    padding: 2px;
+    color:black;
+
+}
+
+.register > a:hover{
+    scale: 1.1;
+    color: black;
+    filter: invert(100);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.796);
+}

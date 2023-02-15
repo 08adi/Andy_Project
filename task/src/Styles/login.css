@@ -1,0 +1,59 @@
+.login {
+
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lgnform {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.lgnbtn>a {
+    border: 1px solid white;
+    text-decoration: none;
+    background-color: whitesmoke;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px grey;
+    height: 25px;
+    padding: 2px;
+    color: black;
+}
+
+a:hover {
+    scale: 1.1;
+    color: black;
+    filter: invert(100);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.796);
+}
+
+.inpp1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 500px;
+}
+.lgnbtn{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 450px;
+    margin-top: 20px;
+}
+.headq
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}

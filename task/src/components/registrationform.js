@@ -13,6 +13,8 @@ const Registration = () => {
           Address: "",
           Subscription: ""
      });
+
+     
      const [users, SetUsers] = useState([]);
      const handleInput = (e) => {
 
@@ -23,7 +25,7 @@ const Registration = () => {
           setRegistraion({ ...Registration, [name]: value });
      }
      const handleSubmit = (e) => {
-  
+
           e.preventdefault();
           const newUser = { ...Registration, }
           console.log(users);
@@ -37,17 +39,27 @@ const Registration = () => {
                Address: "",
                // Subscription: ""
           });
+
+          //Registration != null
+          
+
+          
+          //Registration.name!= empty
+          //if(empty) alert enter ur details
+
+
+
      }
 
-     console.log( { ...Registration })
+     console.log({ ...Registration })
 
 
 
      const reg = async () => {
           const data = await axios.post("http://localhost:2000/addUser", { ...Registration })
-        
 
-          localStorage.setItem("id",data.data.insertedId)
+
+          localStorage.setItem("id", data.data.insertedId)
      }
 
      return (
@@ -62,7 +74,7 @@ const Registration = () => {
 
                          <div className='inpp'>
                               <label htmlFor="Firstname">First name :</label>
-                              <input type="text" name="Firstname" id="Firstname" placeholder='Enter your first name'  value={Registration.Firstname} onChange={handleInput} autoComplete="off" required />
+                              <input type="text" name="Firstname" id="Firstname" placeholder='Enter your first name' value={Registration.Firstname} onChange={handleInput} autoComplete="off" required />
                          </div>
                          <div className='inpp'>
                               <label htmlFor="Lastname">Last name :</label>
@@ -70,15 +82,15 @@ const Registration = () => {
                          </div>
                          <div className='inpp'>
                               <label htmlFor="Phone">Phone:</label>
-                              <input type="number" name="phone" id="phone" placeholder='Enter your number' value={Registration.phone} onChange={handleInput}  autoComplete="off" />
+                              <input type="number" name="phone" id="phone" placeholder='Enter your number' value={Registration.phone} onChange={handleInput} autoComplete="off" />
                          </div>
                          <div className='inpp'>
                               <label htmlFor="Email">Email:</label>
-                              <input type="email" name="Email" id="Email" placeholder='Enter your email' value={Registration.Email} onChange={handleInput}  autoComplete="off"/>
+                              <input type="email" name="Email" id="Email" placeholder='Enter your email' value={Registration.Email} onChange={handleInput} autoComplete="off" />
                          </div>
                          <div className='inpp'>
                               <label htmlFor="Address">Address:</label>
-                              <input type="text" name="Address" id="Address" placeholder='Enter your address' value={Registration.Address} onChange={handleInput}  autoComplete="off" required/>
+                              <input type="text" name="Address" id="Address" placeholder='Enter your address' value={Registration.Address} onChange={handleInput} autoComplete="off" required />
                          </div>
                          {/* <div className='inpp'>
                               <label htmlFor="Subscription">Subscription:</label>
@@ -88,9 +100,17 @@ const Registration = () => {
                          <div className='butt'>
                               <div className='register'> <p>Already Registered !</p>
                                    <Link to="/login" onClick={reg} >Login</Link>
-                                   </div>
-                                   <div className='register'><p>Proceed Further</p>
-                             < Link  href="/buttons/41" to="/subscribe"  onClick={reg}>Paynow</Link>
+                              </div>
+                              <div className='register'><p>Proceed Further</p>
+
+
+                                    < Link href="/buttons/41" to="/subscribe" onClick={reg}>Paynow</Link> 
+                                        
+
+                                   
+
+
+
                               </div>
                          </div>
                     </form>

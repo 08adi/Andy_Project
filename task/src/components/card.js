@@ -4,14 +4,6 @@ import "../Styles/card.css";
 
 
 const Card = ({ card }) => {
-    const downr = document.querySelector(".download");
-    function printOrSave() {
-        downr.style.visibility="hidden";
-        window.print();
-        downr.style.visibility="visible";
-    }
-    
-    downr.addEventListener("click",printOrSave)
     
     console.log(card);
 
@@ -43,7 +35,11 @@ const Card = ({ card }) => {
 
             </div>
 
-            <div className="down">  <button className="download">Save/Print</button> </div>
+            <div className="down">  <button className="download" onClick={()=>{
+             
+                window.print();
+               
+            }}>Save/Print</button> </div>
 
 
         </>
